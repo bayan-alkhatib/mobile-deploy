@@ -1,0 +1,8 @@
+build:
+  docker:
+    web: Dockerfile
+release:
+  image: web
+run:
+  web: gunicorn mobile_api_project.wsgi --workers 4
+
